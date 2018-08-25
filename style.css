@@ -35,7 +35,7 @@ body {
     text-transform: uppercase;
 }
 .cloud{
-    font-size: 3em;
+    font-size: 4em;
 }
 .main{
 	/*min-width: 300px;*/
@@ -88,4 +88,7 @@ body {
 	background: #ffb28859;
 	border-radius: 5px;
 	transition: 1s;
+}
+.cloud-1, .cloud-2, .cloud-3, .cloud-4, .cloud-5 {
+	font-size: 25px	
 }
