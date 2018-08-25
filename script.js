@@ -78,7 +78,7 @@ function getWeather() {
 
     $.ajax({
 
-        url: `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=19327fb20ae55f03a05cf4c2751e0ce2&units=metric`,
+        url: `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=19327fb20ae55f03a05cf4c2751e0ce2&units=metric`,
         success: function(data){
             document.querySelector(".main").style.display = "block";
 
