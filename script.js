@@ -6,6 +6,7 @@ function getWeather() {
 
 
     document.querySelector(".weather-info").style.display = "block";
+    document.querySelector(".weather-comment").style.display = "none";
 
     const cityName = document.querySelector("input").value;
 
@@ -13,27 +14,6 @@ function getWeather() {
         url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=19327fb20ae55f03a05cf4c2751e0ce2&units=metric`,
         success: function (data) {
             console.log(data);
-            // let isNight;
-
-            // if (isNight === true) {
-            //     document.querySelector("body").style["background-color"] = "black"
-            //     // black background
-            //     // color white
-            // } else {
-            //     document.querySelector("body").style["background-color"] = "orange"                
-            //     // orange background
-            //     // color black
-            // }
-
-            // if (weatherCloud.lastMsgStatus === "seen") {
-            //     icon = "day-cloudy";
-            // } else if(weatherCloud.lastMsgStatus === "sent"){
-            //     icon = "day-hail";
-            // } else{
-            //     icon = "night-cloudy-high";
-            // }
-
-            // document.querySelector(".cloud").innerHTML = `<i class="wi wi-${icon}"></i>`;  
 
             weatherType = data.weather[0].icon;
             if(weatherType =="01d" || weatherType == "01n"){
@@ -271,3 +251,6 @@ function getWeather() {
 
 }
 
+function mySubmitFunction(){
+ return false;
+}
