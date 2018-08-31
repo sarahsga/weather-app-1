@@ -16,10 +16,12 @@ html{
 }
 .weather-comment{
 	margin-top: 100px;
+	color: #484444;
 }
 .info{
 	font-size: 8vw;
 	margin: 0;
+	font-family: -webkit-pictograph;
 }
 .arrow{
 	font-size: 10vw;
@@ -27,7 +29,6 @@ html{
 
 form{
 	margin-top: 15px;
-	min-width: 312px;
 }
 
 .container {
@@ -45,6 +46,7 @@ input, button{
 button:hover{
 	background-color: #343a40;
 	color: white;
+	cursor: pointer;	
 }
 
 button, input:focus{
@@ -52,18 +54,23 @@ button, input:focus{
 }
 
 .temp {
+	color: #413e3e;
     font-size: 4em;
     margin: 0px;
 }
 
 .description {
-    font-size: 2em;
+    font-family: cursive;
+    font-size: 40px;
     margin: 0px;
+    color: #413e3e;
 }
 
 .temp-range{
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 22px;
+	font-family: monospace;
+	color: #2f4f4f;
 }
 
 .weather-info {
@@ -71,12 +78,17 @@ button, input:focus{
 }
 
 .city-name {
+	font-size: 38px;
+	font-family: -webkit-pictograph;
     letter-spacing: 3px;
+    color: #282828;
     text-transform: uppercase;
 }
 
 .cloud{
     font-size: 4em;
+    margin-top: 15px;
+    color: #20b1db;
 }
 
 .main{
@@ -96,14 +108,13 @@ button, input:focus{
 .display-sec div{
 	width: 16%;
 	padding: 15px;
-	height: 270px;
+	height: 245px;
 	flex-wrap: wrap;
 	min-width: 140px;
 	text-align: center;
-	cursor: pointer;
 	margin: 3px;
 	border: 2px solid #ffb288;
-
+	font-weight: bold;
 }
 
 .display-sec div:hover{
@@ -113,5 +124,55 @@ button, input:focus{
 }
 
 .cloudy{
-	font-size: 25px	
+	font-size: 40px;
+	color: #20b1db;
+}
+.day{
+	margin: 0;
+	font-family: -webkit-pictograph;
+	color: #282828;
+
+}
+.date{
+	margin-top: 0; 
+	font-family: monospace;
+	color: #282828;
+}
+#temp{
+	font-family: fantasy;
+	color: #413e3e;
+}
+#cloud{
+	font-family: monospace;
+	color: #282828;
+
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .display-sec div{
+		width: 22%;
+	
+	}
+}
+@media only screen and (max-width: 556px) {
+	.display-sec .day5{
+		width: 100%;
+		border: none;
+		border-top: 2px solid #ffb288;
+
+	}
+}
+
+@media only screen and (max-width: 420px) {
+    .display-sec div{
+		width: 100%;
+		border: none;
+    	border-top: 2px solid #ffb288;
+    	margin: 0;
+    	border-radius: 0px;
+	}
+	input{
+		width: 55%;
+	}
 }
